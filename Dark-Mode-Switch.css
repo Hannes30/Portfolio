@@ -1,0 +1,31 @@
+#Mode-Switch {
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  right: 25px;
+  width: 50px;
+  padding: 0.3rem;
+  border-radius: 50px;
+  border: 2px solid var(--MainColor);
+  background-color: var(--BackgroundColor);
+  transition: 1s;
+}
+
+#Mode-Switch:hover {
+  background-color: var;
+  transition: 1s;
+}
+#Mode-Switch-Circel {
+  position: relative;
+  padding: 0.5rem;
+  width: 0;
+  left: 0%;
+  border-radius: 50%;
+  background-color: var(--MainColor);
+  transition: left 1s;
+}
+@media (prefers-color-scheme: dark) {
+  #Mode-Switch-Circel {
+    left: 50%;
+  }
+}

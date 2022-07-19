@@ -17,6 +17,8 @@ x.forEach((c) => {
     c.classList.add("status-red");
   }
 });
+
+/*
 let divs = [];
 const scroll = $("#scrolldiv");
 divs[0] = $("#about");
@@ -35,7 +37,7 @@ window.onscroll = () => {
       check[i] = true;
     }
   }
-};
+};*/
 
 const div1 = $("#write");
 let curstring = "";
@@ -72,4 +74,29 @@ function write() {
     div1.html(temp + "<span>|</span>");
     i++;
   }, 100);
+}
+
+var r = document.querySelector(":root");
+var ModeSwitchCircel = document.getElementById("Mode-Switch-Circel");
+function changeMode() {
+  var rs = getComputedStyle(r);
+  if (rs.getPropertyValue("--MainColor").trim() == "#0c8") {
+    setLight();
+  } else if (rs.getPropertyValue("--MainColor").trim() == "#f04") {
+    setDark();
+  }
+}
+function setLight() {
+  ModeSwitchCircel.style.left = "0%";
+  r.style.setProperty("--MainColor", "#f04");
+  r.style.setProperty("--SecondColor", "#444");
+  r.style.setProperty("--BackGroundColor", "#ccc");
+  r.style.setProperty("--ButtonColor", "#bbb");
+}
+function setDark() {
+  ModeSwitchCircel.style.left = "50%";
+  r.style.setProperty("--MainColor", "#0c8");
+  r.style.setProperty("--SecondColor", "#bbb");
+  r.style.setProperty("--BackGroundColor", "#111");
+  r.style.setProperty("--ButtonColor", "#444");
 }
