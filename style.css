@@ -231,6 +231,7 @@ ul {
   position: relative;
   width: 1.5rem;
   left: 1%;
+  fill: var(--SecondColor);
 }
 #contact a {
   font-size: 1.5rem;
