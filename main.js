@@ -77,7 +77,7 @@ function write() {
 }
 
 var r = document.querySelector(":root");
-var ModeSwitchCircel = document.getElementById("Mode-Switch-Circel");
+var ModeSwitchCircle = document.getElementById("Mode-Switch-Circel");
 function changeMode() {
   var rs = getComputedStyle(r);
   if (rs.getPropertyValue("--MainColor").trim() == "#0c8") {
@@ -87,14 +87,14 @@ function changeMode() {
   }
 }
 function setLight() {
-  ModeSwitchCircel.style.left = "0%";
+  ModeSwitchCircle.style.left = "0%";
   r.style.setProperty("--MainColor", "#f04");
   r.style.setProperty("--SecondColor", "#444");
   r.style.setProperty("--BackGroundColor", "#ccc");
   r.style.setProperty("--ButtonColor", "#bbb");
 }
 function setDark() {
-  ModeSwitchCircel.style.left = "50%";
+  ModeSwitchCircle.style.left = "50%";
   r.style.setProperty("--MainColor", "#0c8");
   r.style.setProperty("--SecondColor", "#bbb");
   r.style.setProperty("--BackGroundColor", "#111");
