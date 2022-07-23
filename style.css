@@ -1,10 +1,9 @@
 :root {
-  --MainColor: #f04;
+  --MainColor: #40f;
   --SecondColor: #444;
-  --BackGroundColor: #ccc;
+  --BackGroundColor: rgb(255, 255, 255);
   --ButtonColor: #bbb;
 }
-
 * {
   font-family: "Roboto", sans-serif;
   transition: 1s;
@@ -206,10 +205,10 @@ a {
 .Projekt h3 a {
   color: var(--MainColor);
   font-size: 2.5rem;
-  text-decoration-color: rgba(187, 187, 187, 0.288);
+  text-decoration-color: #444;
 }
 .verwendet {
-  color: rgb(163, 125, 0);
+  color: #fa0;
 }
 /*Contact*/
 #contact {

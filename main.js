@@ -82,15 +82,15 @@ function changeMode() {
   var rs = getComputedStyle(r);
   if (rs.getPropertyValue("--MainColor").trim() == "#0c8") {
     setLight();
-  } else if (rs.getPropertyValue("--MainColor").trim() == "#f04") {
+  } else if (rs.getPropertyValue("--MainColor").trim() == "#40f") {
     setDark();
   }
 }
 function setLight() {
   ModeSwitchCircle.style.left = "0%";
-  r.style.setProperty("--MainColor", "#f04");
+  r.style.setProperty("--MainColor", "#40f");
   r.style.setProperty("--SecondColor", "#444");
-  r.style.setProperty("--BackGroundColor", "#ccc");
+  r.style.setProperty("--BackGroundColor", "#fff");
   r.style.setProperty("--ButtonColor", "#bbb");
 }
 function setDark() {
